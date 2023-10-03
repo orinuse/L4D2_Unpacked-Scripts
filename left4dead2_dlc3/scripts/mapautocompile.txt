@@ -1,0 +1,24 @@
+map: default
+	vbsp:	
+	vvis:	-mpi
+	vrad:	-mpi -textureshadows -hdr -StaticPropLighting -StaticPropPolys -final
+
+map: c13m1_alpinecreek
+	vbsp:	
+	vvis:	-mpi
+	vrad:	-mpi -textureshadows -hdr -StaticPropLighting -StaticPropPolys -lights coldstream.rad -final
+
+map: c13m2_southpinestream
+	vbsp:	
+	vvis:	-mpi
+	vrad:	-mpi -textureshadows -hdr -StaticPropLighting -StaticPropPolys -lights coldstream.rad -final
+
+map: c13m3_memorialbridge
+	vbsp:	
+	vvis:	-mpi
+	vrad:	-mpi -textureshadows -hdr -StaticPropLighting -StaticPropPolys -lights coldstream.rad -final 
+
+map: c13m4_cutthroatcreek
+	vbsp:	
+	vvis:	-mpi
+	vrad:	-mpi -textureshadows -hdr -StaticPropLighting -StaticPropPolys -lights coldstream.rad -final 
