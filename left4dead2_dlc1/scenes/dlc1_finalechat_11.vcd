@@ -1,0 +1,193 @@
+// Choreo version 1
+event stoppoint "end"
+{
+  time 20.500002 -1.000000
+  param "noaction"
+}
+actor "Biker"
+{
+  channel "audio"
+  {
+    event speak "Biker_DLC1_C6M3_FinaleChat25"
+    {
+      time 9.772223 13.388323
+      param "Biker_DLC1_C6M3_FinaleChat36"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "facial flex"
+  {
+    event lookat "player"
+    {
+      time -0.055556 30.902779
+      param "!player"
+    }
+  }
+  channel "gestures"
+  {
+    event gesture "dlc1_finaleintro_francis_GoodLuckWithTahtWav"
+    {
+      time 9.475001 14.508334
+      param "dlc1_finaleintro_francis_GoodLuckWithTahtWav"
+      sequenceduration 5.033333
+    }
+    event gesture "dlc1_finaleintro_francis_weight_shift_hold"
+    {
+      time 1.183041 4.649708
+      param "dlc1_finaleintro_francis_weight_shift_hold"
+      sequenceduration 3.466667
+    }
+    event gesture "dlc1_finaleintro_francis_idle_extra_noise_02"
+    {
+      time 5.433041 7.399707
+      param "dlc1_finaleintro_francis_idle_extra_noise_02"
+      sequenceduration 1.966667
+    }
+    event gesture "dlc1_finaleintro_francis_idle_extra_noise_02"
+    {
+      time 16.183041 18.149708
+      param "dlc1_finaleintro_francis_idle_extra_noise_02"
+      sequenceduration 1.966667
+    }
+  }
+  channel "triggers"
+  {
+  }
+  faceposermodel "D:\L4D2\main\game\left4dead2_dlc1\models\survivors\survivor_biker.mdl"
+}
+
+actor "TeenGirl"
+{
+  channel "audio"
+  {
+    event lookat "player"
+    {
+      time -0.097222 30.916670
+      param "!player"
+    }
+  }
+  channel "gestures"
+  {
+  }
+  faceposermodel "D:\l4d2_dev\main\game\left4dead2_dlc1\models\survivors\survivor_teenangst.mdl"
+}
+
+actor "Gambler"
+{
+  channel "audio"
+  {
+  }
+}
+
+actor "Coach"
+{
+  channel "audio"
+  {
+  }
+}
+
+actor "Mechanic"
+{
+  channel "audio"
+  {
+    event speak "Mechanic_DLC1_C6M3_FinaleChat09"
+    {
+      time 3.433333 9.481859
+      param "Mechanic_DLC1_C6M3_FinaleChat09"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "Mechanic_DLC1_C6M3_FinaleChat09"
+    {
+      time 18.616667 20.506666
+      param "Mechanic_DLC1_C6M3_FinaleChat10"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+actor "Producer"
+{
+  channel "audio"
+  {
+  }
+}
+
+actor "Manager"
+{
+  channel "audio"
+  {
+    event speak "Manager_DLC1_C6M3_FinaleChat16"
+    {
+      time 0.383333 3.126530
+      param "Manager_DLC1_C6M3_FinaleChat16"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "Manager_DLC1_C6M3_FinaleChat16"
+    {
+      time 13.716667 18.193878
+      param "Manager_DLC1_C6M3_FinaleChat17"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "pose"
+  {
+    event lookat "player"
+    {
+      time -0.083333 9.555556
+      param "!player"
+    }
+    event lookat "player"
+    {
+      time 13.069446 31.013893
+      param "!player"
+    }
+    event lookat "Biker"
+    {
+      time 9.597223 13.027779
+      param "Biker"
+    }
+  }
+  channel "gestures"
+  {
+    event gesture "dlc1_finaleintro_louis_HeyYouMadeItWav"
+    {
+      time 0.196970 8.730304
+      param "dlc1_finaleintro_louis_HeyYouMadeItWav"
+      sequenceduration 5.333333
+    }
+    event gesture "dlc1_finaleintro_louis_GotoGeneratorWav"
+    {
+      time 13.575758 18.242424
+      param "dlc1_finaleintro_louis_GotoGeneratorWav"
+      sequenceduration 4.666667
+    }
+    event gesture "dlc1_finaleintro_louis_lookfrancis"
+    {
+      time 10.083334 11.583334
+      param "dlc1_finaleintro_louis_lookfrancis"
+    }
+  }
+  faceposermodel "D:\L4D2\main\game\left4dead2_dlc1\models\survivors\survivor_manager.mdl"
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "RampTool" "66"
+  "ExpressionTool" "100"
+  "CChoreoView" "48"
+}
+fps 60
+snap off
+ignorePhonemes off

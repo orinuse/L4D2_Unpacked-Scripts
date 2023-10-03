@@ -1,0 +1,55 @@
+
+
+"M60.Fire"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"		"SNDLVL_TALKING"
+	"volume"		"1"
+	"wave"			")weapons/machinegun_m60/gunfire/machinegun_fire_1.wav"
+}
+
+"M60.FireIncendiary"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"		"SNDLVL_TALKING"
+	"volume"		"1"
+	"wave"			")weapons/machinegun_m60/gunfire/machinegun_fire_1_incendiary.wav"
+}
+
+
+"GolfClub.Miss"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"		"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"		")weapons/golf_club/wpn_golf_club_swing_miss1.wav"
+		"wave"		")weapons/golf_club/wpn_golf_club_swing_miss2.wav"
+	}
+}
+
+"GolfClub.ImpactFlesh"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"		"SNDLVL_TALKING"
+	"volume"		"1.0"
+	"pitch"			"98, 102"
+	"rndwave"
+	{
+		"wave"		")weapons/golf_club/wpn_golf_club_melee_01.wav"
+		"wave"		")weapons/golf_club/wpn_golf_club_melee_02.wav"
+	}
+}
+
+"GolfClub.ImpactWorld"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"		"SNDLVL_TALKING"
+	"pitch"		"95,105"
+	"rndwave"
+	{
+		"wave"		")weapons/golf_club/wpn_golf_club_impact_world1.wav"
+		"wave"		")weapons/golf_club/wpn_golf_club_impact_world2.wav"
+	}
+}
+

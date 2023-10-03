@@ -1,0 +1,49 @@
+"MidnightRiders.Horn"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  		"SNDLVL_150dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"vehicles/bus_horn.wav"
+}
+
+"Trunk.Open"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  		"SNDLVL_75dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"doors/trunk_open.wav"
+}
+
+
+"catwalk.gate.open"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  		"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"wave"			"animation/catwalk_gate_open.wav"
+}
+
+
+
+"stock_car_escape"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.43"
+	"soundlevel"  		"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"wave"			"animation/c6m3_escape.wav"
+}
+
+
+"c6_bridge_lower_part1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		".24"
+	"soundlevel"  		"SNDLVL_140db"
+	"pitch"			"PITCH_NORM"
+	"wave"			"animation/c6_BridgeLower_seg01.wav"
+}
+

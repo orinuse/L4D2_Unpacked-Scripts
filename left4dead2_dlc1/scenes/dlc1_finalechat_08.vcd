@@ -1,0 +1,244 @@
+// Choreo version 1
+event stoppoint "end"
+{
+  time 22.738096 -1.000000
+  param "noaction"
+}
+actor "Biker"
+{
+  channel "audio"
+  {
+    event speak "Biker_DLC1_C6M3_FinaleChat25"
+    {
+      time 2.462963 7.382260
+      param "Biker_DLC1_C6M3_FinaleChat25"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "Biker_DLC1_C6M3_FinaleChat25"
+    {
+      time 15.129631 22.743486
+      param "Biker_DLC1_C6M3_FinaleChat26"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gestures"
+  {
+  }
+  channel "facial flex"
+  {
+    event gesture "dlc1_finaleintro_francis_gesture01"
+    {
+      time 20.940475 22.707142
+      param "dlc1_finaleintro_francis_gesture01"
+      sequenceduration 1.766667
+    }
+    event gesture "dlc1_finaleintro_francis_gesture03"
+    {
+      time 15.357143 17.657143
+      param "dlc1_finaleintro_francis_gesture03"
+      sequenceduration 1.766667
+    }
+    event gesture "dlc1_finaleintro_francis_gesture04"
+    {
+      time 18.119049 19.885715
+      param "dlc1_finaleintro_francis_gesture04"
+      sequenceduration 1.766667
+    }
+    event lookat "player"
+    {
+      time -0.359890 43.688545
+      param "!player"
+    }
+  }
+  channel "triggers"
+  {
+  }
+  channel "gestures"
+  {
+    event gesture "dlc1_finaleintro_francis_all_yer_crying"
+    {
+      time 2.212963 7.112963
+      param "dlc1_finaleintro_francis_all_yer_crying"
+      sequenceduration 5.333333
+    }
+    event gesture "dlc1_finaleintro_francis_gesture07"
+    {
+      time 13.261906 14.495239
+      param "dlc1_finaleintro_francis_gesture07"
+      sequenceduration 1.233333
+    }
+    event gesture "dlc1_finaleintro_francis_ten_four"
+    {
+      time 20.107143 20.840477
+      param "dlc1_finaleintro_francis_ten_four"
+      sequenceduration 0.733333
+    }
+    event gesture "dlc1_finaleintro_francis_looklouis"
+    {
+      time 7.571429 9.238096
+      param "dlc1_finaleintro_francis_looklouis"
+      sequenceduration 1.666667
+    }
+  }
+  faceposermodel "D:\l4d\main\game\left4dead2_dlc1\models\survivors\survivor_biker.mdl"
+}
+
+actor "TeenGirl"
+{
+  channel "audio"
+  {
+  }
+  channel "gestures"
+  {
+    event lookat "player"
+    {
+      time -0.414021 43.715614
+      param "!player"
+    }
+  }
+  channel "gestures"
+  {
+    event gesture "dlc1_finaleintro_zoey_snap"
+    {
+      time 3.107143 5.107142
+      param "dlc1_finaleintro_zoey_snap"
+      sequenceduration 2.000000
+    }
+    event gesture "dlc1_finaleintro_zoey_sigh"
+    {
+      time 6.452381 7.785714
+      param "dlc1_finaleintro_zoey_sigh"
+      sequenceduration 1.333333
+    }
+    event gesture "dlc1_finaleintro_zoey_Bodyshift"
+    {
+      time 8.726191 12.726191
+      param "dlc1_finaleintro_zoey_Bodyshift"
+    }
+    event gesture "dlc1_finaleintro_zoey_lookfrancis2"
+    {
+      time 16.738096 19.238096
+      param "dlc1_finaleintro_zoey_lookfrancis2"
+    }
+  }
+  faceposermodel "D:\l4d\main\game\left4dead2_dlc1\models\survivors\survivor_teenangst.mdl"
+}
+
+actor "Gambler"
+{
+  channel "audio"
+  {
+    event speak "Gambler_DLC1_C6M3_FinaleChat06"
+    {
+      time 11.166667 14.702608
+      param "Gambler_DLC1_C6M3_FinaleChat07"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "Gambler_DLC1_C6M3_FinaleChat06"
+    {
+      time 0.351852 2.542328
+      param "Gambler_DLC1_C6M3_FinaleChat06"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+actor "Coach"
+{
+  channel "audio"
+  {
+  }
+}
+
+actor "Mechanic"
+{
+  channel "audio"
+  {
+    event speak "Mechanic_DLC1_C6M3_FinaleChat08"
+    {
+      time 7.388888 11.095169
+      param "Mechanic_DLC1_C6M3_FinaleChat08"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+actor "Producer"
+{
+  channel "audio"
+  {
+  }
+}
+
+actor "Manager"
+{
+  channel "audio"
+  {
+  }
+  channel "gestures"
+  {
+    event lookat "player"
+    {
+      time 11.453704 40.379635
+      param "!player"
+    }
+    event lookat "player"
+    {
+      time -0.035714 6.559524
+      param "!player"
+    }
+    event lookat "Biker"
+    {
+      time 6.559525 11.488096
+      param "Biker"
+    }
+  }
+  channel "gestures"
+  {
+    event gesture "dlc1_finaleintro_louis_Lookoff"
+    {
+      time 2.261905 5.261905
+      param "dlc1_finaleintro_louis_Lookoff"
+      sequenceduration 3.000000
+    }
+    event gesture "dlc1_finaleintro_louis_lookfrancis2"
+    {
+      time 8.744762 11.244762
+      param "dlc1_finaleintro_louis_lookfrancis2"
+    }
+    event gesture "dlc1_finaleintro_louis_nod"
+    {
+      time 16.630953 17.630953
+      param "dlc1_finaleintro_louis_nod"
+    }
+    event gesture "dlc1_finaleintro_louis_giggle"
+    {
+      time 6.654762 8.654762
+      param "dlc1_finaleintro_louis_giggle"
+      sequenceduration 2.000000
+    }
+  }
+  faceposermodel "D:\l4d\main\game\left4dead2_dlc1\models\survivors\survivor_manager.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "56"
+  "ExpressionTool" "100"
+  "RampTool" "66"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

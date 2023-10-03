@@ -1,0 +1,222 @@
+// Choreo version 1
+event stoppoint "end"
+{
+  time 21.935898 -1.000000
+  param "noaction"
+}
+actor "Biker"
+{
+  channel "audio"
+  {
+  }
+  channel "gestures"
+  {
+    event gesture "dlc1_finaleintro_francis_Lean"
+    {
+      time 0.166667 6.433333
+      param "dlc1_finaleintro_francis_Lean"
+      sequenceduration 6.266667
+    }
+    event gesture "dlc1_finaleintro_francis_headnod"
+    {
+      time 7.116666 8.116666
+      param "dlc1_finaleintro_francis_headnod"
+    }
+    event gesture "dlc1_finaleintro_francis_looklouis2_slow"
+    {
+      time 13.899999 18.344446
+      param "dlc1_finaleintro_francis_looklouis2_slow"
+      sequenceduration 4.444445
+    }
+  }
+  channel "facial flex"
+  {
+  }
+  channel "triggers"
+  {
+    event lookat "!player"
+    {
+      time 0.051515 30.277273
+      param "!player"
+    }
+  }
+}
+
+actor "TeenGirl"
+{
+  channel "audio"
+  {
+    event lookat "manager"
+    {
+      time 0.045455 2.393939
+      param "manager"
+    }
+    event lookat "!player"
+    {
+      time 2.318182 13.727272
+      param "!player"
+    }
+    event lookat "manager"
+    {
+      time 13.636365 17.227274
+      param "manager"
+    }
+    event lookat "!player"
+    {
+      time 17.181820 30.318180
+      param "!player"
+    }
+  }
+  channel "gestures"
+  {
+    event gesture "dlc1_finaleintro_zoey_weightshift"
+    {
+      time 2.633333 8.483334
+      param "dlc1_finaleintro_zoey_weightshift"
+      sequenceduration 4.000000
+    }
+    event gesture "dlc1_finaleintro_zoey_looklouis2"
+    {
+      time 13.750000 17.333334
+      param "dlc1_finaleintro_zoey_looklouis2"
+      sequenceduration 2.500000
+    }
+    event gesture "dlc1_finaleintro_zoey_looklouis"
+    {
+      time 0.266666 2.633333
+      param "dlc1_finaleintro_zoey_looklouis"
+      sequenceduration 1.500000
+    }
+    event gesture "dlc1_finaleintro_zoey_sigh"
+    {
+      time 18.299999 19.633333
+      param "dlc1_finaleintro_zoey_sigh"
+      sequenceduration 1.333333
+    }
+  }
+  faceposermodel "D:\l4d2_dev\main\game\left4dead2_dlc1\models\survivors\survivor_teenangst.mdl"
+}
+
+actor "Mechanic"
+{
+  channel "audio"
+  {
+  }
+}
+
+actor "Producer"
+{
+  channel "audio"
+  {
+    event speak "Producer_DLC1_C6M3_FinaleChat21"
+    {
+      time 4.233333 5.101337
+      param "Producer_DLC1_C6M3_FinaleChat21"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "Producer_DLC1_C6M3_FinaleChat21"
+    {
+      time 10.550000 13.207642
+      param "Producer_DLC1_C6M3_FinaleChat24"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+actor "Manager"
+{
+  channel "audio"
+  {
+    event speak "Manager_DLC1_C6M3_FinaleChat19"
+    {
+      time 0.416667 3.782540
+      param "Manager_DLC1_C6M3_FinaleChat19"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "Manager_DLC1_C6M3_FinaleChat19"
+    {
+      time 5.366667 10.258028
+      param "Manager_DLC1_C6M3_FinaleChat20"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "Manager_DLC1_C6M3_FinaleChat19"
+    {
+      time 13.466668 21.905987
+      param "Manager_DLC1_C6M3_FinaleChat22"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "pose"
+  {
+    event lookat "player"
+    {
+      time 0.066667 30.307693
+      param "!player"
+    }
+  }
+  channel "gestures"
+  {
+    event gesture "dlc1_finaleintro_louis_speech01"
+    {
+      time 13.166667 19.033333
+      param "dlc1_finaleintro_louis_speech01"
+      sequenceduration 5.866667
+    }
+    event gesture "dlc1_finaleintro_louis_nod"
+    {
+      time 20.216667 21.216667
+      param "dlc1_finaleintro_louis_nod"
+    }
+    event gesture "dlc1_finaleintro_louis_headnod"
+    {
+      time 9.016666 10.183333
+      param "dlc1_finaleintro_louis_headnod"
+      sequenceduration 1.166667
+    }
+    event gesture "dlc1_finaleintro_louis_headnod"
+    {
+      time 0.216666 1.383333
+      param "dlc1_finaleintro_louis_headnod"
+      sequenceduration 1.166667
+    }
+    event gesture "dlc1_finaleintro_louis_headshake"
+    {
+      time 6.333333 7.333333
+      param "dlc1_finaleintro_louis_headshake"
+    }
+    event gesture "dlc1_finaleintro_louis_giggle"
+    {
+      time 1.416667 3.416667
+      param "dlc1_finaleintro_louis_giggle"
+      sequenceduration 2.000000
+    }
+    event gesture "dlc1_finaleintro_louis_where_you_heading"
+    {
+      time 5.333334 6.233334
+      param "dlc1_finaleintro_louis_where_you_heading"
+      sequenceduration 0.900000
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "32"
+  "ExpressionTool" "100"
+  "RampTool" "66"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
