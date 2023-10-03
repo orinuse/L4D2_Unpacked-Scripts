@@ -1,0 +1,1756 @@
+
+//----------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
+// Sacrifice
+//
+"Event.MissionStart_Sacrifice"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/stmusic/TheSacrifice.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "checkpoint"
+		"MusicAutoQueue"        "Event.MissionStart_BaseLoop_Sacrifice"
+		"MusicPriority"			"MEDIUM"
+		"MusicParameters"		"AFTER_DEATH"
+		"MusicMaster"           "PLAY_TO_END"	
+		"MusicMasterTags"
+		{
+			// "loopStart" "76.146"
+			"loopStart" "107.252"
+
+		}
+	}
+}
+"Event.MissionStart_BaseLoop_Sacrifice"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"wave"			"@#music/cpmusic/PrayForDeath.wav"
+
+	GameData
+	{
+		"MusicPriority"			"MEDIUM"
+		"MusicTrack"            "checkpoint"
+		"MusicTagTrack"         "checkpoint"
+		"MusicFadeOut"         	"5.0"
+	}
+}
+
+// --------------------------------------------------------------------
+// checkpoints
+// --------------------------------------------------------------------
+
+"Event.CheckPointIntro_Sacrifice"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"wave"			"@#music/stmusic/YouHadBetterPray.wav"
+
+	GameData
+	{
+		"MusicTrack"            "checkpoint"
+		"MusicAutoQueue"        "Event.CheckPointBaseLoop_Sacrifice"
+		"MusicPriority"			"MEDIUM"
+		"MusicParameters"		"NO_INTENSITY_TRACK"
+		"MusicMaster"           "PLAY_TO_END"
+		"MusicMasterTags"
+		{
+			"loopStart" "1.95"
+		}
+	}
+}
+
+"Event.CheckPointBaseLoop_Sacrifice"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"wave"			"@#music/cpmusic/PrayForDeath.wav"
+
+	GameData
+	{
+		"MusicPriority"			"MEDIUM"
+		"MusicTrack"            "checkpoint"
+		"MusicTagTrack"         "checkpoint"
+		"MusicFadeOut"         	"5.0"
+	}
+}
+
+// --------------------------------------------------------------------
+// when you first leave a checkpoint
+"Event.LeavingSafety_Sacrifice"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3, 0.35"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+ 		"wave"	"@#music/mob/GermS1a.wav"
+ 		"wave"	"@#music/mob/GermS1b.wav"
+	}
+
+	GameData
+	{
+		"MusicDelayTime"        "2.0"
+		"MusicPriority"			"LOW"
+		"MusicTrack"            "overdub"	
+	}
+}
+
+// --------------------------------------------------------------------
+// starting atmosphere after leaving checkpoint
+"Event.StartAtmosphere_Sacrifice"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6, 0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave" "@#music/contagion/NM_Quarantine_01.wav"
+		"wave" "@#music/contagion/NM_Quarantine_02.wav"
+		"wave" "@#music/contagion/NM_Quarantine_03.wav"
+	}
+
+	GameData
+	{
+		"MusicPriority"			"LOW"
+		"MusicTrack"            "safeAmbient"	
+	}
+}
+
+// --------------------------------------------------------------------
+// zombat music
+// --------------------------------------------------------------------
+
+// --------------------------------------------------------------------
+//  C6  DeadLight
+// --------------------------------------------------------------------
+
+"Event.Zombat2_Intro_Sacrifice"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"wave"			"@#music/zombat/slayer/HordeSlayer_01.wav"
+
+
+	GameData
+	{
+		// "MusicAutoQueue"        "Event.Zombat_A2B_Mall"
+		"MusicTrack"            "zombat2c"
+		"MusicPriority"			"CRITICAL"
+		"MusicTagTrack"         "zombat"
+		"MusicTagIndex"         "0"
+		// "MusicMasterDivTags"    "8.0"
+	}
+}
+
+// --------------------------------------------------------------------
+// Danger
+// --------------------------------------------------------------------
+"Event.Zombat3_Intro_Sacrifice"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6"
+	"soundlevel"	"SNDLVL_NONE"
+
+
+	"wave"			"@#music/zombat/danger/HordeDanger_01.wav"
+
+
+	GameData
+	{
+// 		"MusicAutoQueue"        "Event.Zombat3_A_Sacrifice"
+		"MusicTrack"            "zombat3"
+// 		"MusicTagDelay"         "1, 7"
+// 			//	"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+
+// "Event.Zombat3_A_Sacrifice"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"0.77"
+// 	"soundlevel"	"SNDLVL_NONE"
+
+
+// 	"wave"			"@#music/zombat/danger/HordeDanger_01.wav"
+
+
+// 	GameData
+// 	{
+// 		"MusicAutoQueue"        "Event.Zombat3_B_Sacrifice"
+// 		"MusicTrack"            "zombat3"
+// 		"MusicTagTrack"         "zombat"
+// 		"MusicPriority"			"CRITICAL"
+// 		"MusicTagDelay"         "1, 7"
+// 	}
+// }
+// "Event.Zombat3_B_Sacrifice"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"0.77"
+// 	"soundlevel"	"SNDLVL_NONE"
+
+// 	"wave"			"@#music/zombat/danger/HordeDanger_01.wav"
+
+
+// 	GameData
+// 	{
+// 		"MusicAutoQueue"        "Event.Zombat3_A_Sacrifice"
+// 		"MusicTrack"            "zombat3"
+// 		"MusicTagTrack"         "zombat"
+// 		"MusicTagDelay"         "1, 7"
+// 		"MusicPriority"			"CRITICAL"
+// 	}
+// }
+
+
+
+"Event.MobSignal1_Sacrifice"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3, 0.35"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+ 		"wave"	"@#music/mob/GermL1a.wav"
+ 		"wave"	"@#music/mob/GermL1b.wav"
+ 		"wave"	"@#music/mob/GermM1a.wav"
+ 		"wave"	"@#music/mob/GermM1b.wav"
+ 		"wave"	"@#music/mob/GermS1a.wav"
+ 		"wave"	"@#music/mob/GermS1b.wav"
+ 		"wave"	"@#music/mob/GermX1a.wav"
+ 		"wave"	"@#music/mob/GermX1b.wav"
+	}
+
+	GameData
+	{
+		"MusicPriority"			"LOW"
+		"MusicTrack"            "mobsignal"	
+	}
+}
+"Event.MobSignal2_Sacrifice"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3, 0.35"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+ 		"wave"	"@#music/mob/GermL2a.wav"
+ 		"wave"	"@#music/mob/GermL2b.wav"
+ 		"wave"	"@#music/mob/GermM2a.wav"
+ 		"wave"	"@#music/mob/GermM2b.wav"
+ 		"wave"	"@#music/mob/GermS2a.wav"
+ 		"wave"	"@#music/mob/GermS2b.wav"
+ 		"wave"	"@#music/mob/GermX2a.wav"
+ 		"wave"	"@#music/mob/GermX2b.wav"
+	}
+
+	GameData
+	{
+		"MusicPriority"			"LOW"
+		"MusicTrack"            "mobsignal"	
+	}
+}
+
+///////////////////////////////// Atmosphere!! //////////////////////////
+
+"Event.SafeAtmosphere_Sacrifice"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6, 0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave" "@#music/contagion/NM_Quarantine_01.wav"
+		"wave" "@#music/contagion/NM_Quarantine_02.wav"
+		"wave" "@#music/contagion/NM_Quarantine_03.wav"
+	}
+
+	GameData
+	{
+		"MusicPriority"			"LOW"
+		"MusicTrack"            "safeAmbient"	
+		"MusicParameters"		"INTENSITY_CELING"
+		"MusicFadeOut"         	"1.0"
+
+	}
+}
+
+
+// danger
+
+"Event.DangerAtmosphere_Sacrifice"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6, 0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+
+		"wave" "@#music/contagion/l4d2_rabies_01.wav"
+		"wave" "@#music/contagion/l4d2_rabies_02.wav"
+		"wave" "@#music/contagion/l4d2_rabies_03.wav"
+		"wave" "@#music/contagion/l4d2_rabies_04.wav"
+		"wave" "@#music/contagion/l4d2_rabies_05.wav"
+		"wave" "@#music/contagion/l4d2_rabies_06.wav"
+		"wave" "@#music/contagion/l4d2_rabies_07.wav"
+		"wave" "@#music/contagion/l4d2_rabies_08.wav"
+		"wave" "@#music/contagion/l4d2_rabies_09.wav"
+		"wave" "@#music/contagion/l4d2_rabies_10.wav"
+		"wave" "@#music/contagion/l4d2_rabies_11.wav"
+		"wave" "@#music/contagion/l4d2_rabies_12.wav"
+		"wave" "@#music/contagion/l4d2_rabies_13.wav"
+		"wave" "@#music/contagion/l4d2_rabies_14.wav"
+		"wave" "@#music/contagion/l4d2_rabies_15.wav"
+		"wave" "@#music/contagion/l4d2_rabies_16.wav"
+		"wave" "@#music/contagion/l4d2_rabies_17.wav"
+		"wave" "@#music/contagion/l4d2_rabies_18.wav"
+		"wave" "@#music/contagion/l4d2_rabies_19.wav"
+		"wave" "@#music/contagion/l4d2_rabies_20.wav"
+		"wave" "@#music/contagion/l4d2_rabies_21.wav"
+		"wave" "@#music/contagion/l4d2_rabies_22.wav"
+
+		"wave" "@#music/contagion/L4D_Rabies_01.wav"
+		"wave" "@#music/contagion/L4D_Rabies_02.wav"
+		"wave" "@#music/contagion/L4D_Rabies_03.wav"
+		"wave" "@#music/contagion/L4D_Rabies_04.wav"
+		"wave" "@#music/contagion/L4D_Rabies_05.wav"
+		"wave" "@#music/contagion/L4D_Rabies_06.wav"
+		"wave" "@#music/contagion/L4D_Rabies_07.wav"
+		"wave" "@#music/contagion/L4D_Rabies_08.wav"
+		"wave" "@#music/contagion/L4D_Rabies_09.wav"
+		"wave" "@#music/contagion/L4D_Rabies_10.wav"
+
+	}
+
+	GameData
+	{
+		"MusicPriority"			"LOW"
+		"MusicTrack"            "ambient"	
+		"MusicFadeOut"         	"1.0"
+
+	}
+}
+
+
+//----------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
+// NoMercy
+// No Mercy
+"Event.MissionStart_NoMercy"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/stmusic/nomercy.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "checkpoint"
+		"MusicAutoQueue"        "Event.MissionStart_BaseLoop_NoMercy"
+		"MusicPriority"			"MEDIUM"
+		"MusicParameters"		"AFTER_DEATH"
+		"MusicMaster"           "PLAY_TO_END"	
+		"MusicMasterTags"
+		{
+			// "loopStart" "76.146"
+			"loopStart" "107.252"
+
+		}
+	}
+}
+"Event.MissionStart_BaseLoop_NoMercy"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/cpmusic/nomercyforyou.wav"
+//		"wave"			"@#music/cpmusic/nomercyforyou2.wav"
+	}
+	GameData
+	{
+		"MusicPriority"			"MEDIUM"
+		"MusicTrack"            "checkpoint"
+		"MusicTagTrack"         "checkpoint"
+		"MusicFadeOut"         	"5.0"
+	}
+}
+
+// --------------------------------------------------------------------
+// checkpoints
+// --------------------------------------------------------------------
+
+"Event.CheckPointIntro_NoMercy"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"wave"			"@#music/stmusic/nomercyintro.wav"
+
+	GameData
+	{
+		"MusicTrack"            "checkpoint"
+		"MusicAutoQueue"        "Event.CheckPointBaseLoop_NoMercy"
+		"MusicPriority"			"MEDIUM"
+		"MusicParameters"		"NO_INTENSITY_TRACK"
+		"MusicMaster"           "PLAY_TO_END"
+		"MusicMasterTags"
+		{
+			"loopStart" "1.95"
+		}
+	}
+}
+
+"Event.CheckPointBaseLoop_NoMercy"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/cpmusic/nomercyforyou.wav"
+		"wave"			"@#music/cpmusic/nomercyforyou2.wav"
+ 	}
+	GameData
+	{
+		"MusicPriority"			"MEDIUM"
+		"MusicTrack"            "checkpoint"
+		"MusicTagTrack"         "checkpoint"
+		"MusicFadeOut"         	"5.0"
+	}
+}
+
+// --------------------------------------------------------------------
+// when you first leave a checkpoint
+"Event.LeavingSafety_NoMercy"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3, 0.35"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+ 		"wave"	"@#music/mob/GermS1a.wav"
+ 		"wave"	"@#music/mob/GermS1b.wav"
+	}
+
+	GameData
+	{
+		"MusicDelayTime"        "2.0"
+		"MusicPriority"			"LOW"
+		"MusicTrack"            "overdub"	
+	}
+}
+
+// --------------------------------------------------------------------
+// starting atmosphere after leaving checkpoint
+"Event.StartAtmosphere_NoMercy"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6, 0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave" "@#music/contagion/NM_Quarantine_01.wav"
+		"wave" "@#music/contagion/NM_Quarantine_02.wav"
+		"wave" "@#music/contagion/NM_Quarantine_03.wav"
+	}
+
+	GameData
+	{
+		"MusicPriority"			"LOW"
+		"MusicTrack"            "safeAmbient"	
+	}
+}
+
+// --------------------------------------------------------------------
+// zombat music
+// --------------------------------------------------------------------
+
+// --------------------------------------------------------------------
+//  C6  DeadLight
+// --------------------------------------------------------------------
+
+"Event.Zombat2_Intro_NoMercy"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"wave"			"@#music/zombat/slayer/HordeSlayer_01.wav"
+
+	GameData
+	{
+		// "MusicAutoQueue"        "Event.Zombat_A2B_Mall"
+		"MusicTrack"            "zombat2c"
+		"MusicPriority"			"CRITICAL"
+		"MusicTagTrack"         "zombat"
+		"MusicTagIndex"         "0"
+		// "MusicMasterDivTags"    "8.0"
+	}
+}
+
+// --------------------------------------------------------------------
+// Danger
+// --------------------------------------------------------------------
+"Event.Zombat3_Intro_NoMercy"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"wave"			"@#music/zombat/danger/HordeDanger_01.wav"
+
+	GameData
+	{
+//		"MusicAutoQueue"        "Event.Zombat3_A_NoMercy"
+		"MusicTrack"            "zombat3"
+//		"MusicTagDelay"         "1, 7"
+			//	"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+
+// "Event.Zombat3_A_NoMercy"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"0.77"
+// 	"soundlevel"	"SNDLVL_NONE"
+
+// 	"wave"			"@#music/zombat/danger/Hordedanger_01.wav"
+
+
+// 	GameData
+// 	{
+// 		"MusicAutoQueue"        "Event.Zombat3_B_NoMercy"
+// 		"MusicTrack"            "zombat3"
+// 		"MusicTagTrack"         "zombat"
+// 		"MusicPriority"			"CRITICAL"
+// 		"MusicTagDelay"         "1, 7"
+// 	}
+// }
+// "Event.Zombat3_B_NoMercy"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"0.77"
+// 	"soundlevel"	"SNDLVL_NONE"
+
+// 	"wave"			"@#music/zombat/danger/Hordedanger_01.wav"
+
+
+// 	GameData
+// 	{
+// 		"MusicAutoQueue"        "Event.Zombat3_A_NoMercy"
+// 		"MusicTrack"            "zombat3"
+// 		"MusicTagTrack"         "zombat"
+// 		"MusicTagDelay"         "1, 7"
+// 		"MusicPriority"			"CRITICAL"
+// 	}
+// }
+
+
+///////////////////////////////// Zombies!! //////////////////////////
+// L4D2
+// BigEasy
+// S
+"Event.MobSignal1_NoMercy"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3, 0.35"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+ 		"wave"	"@#music/mob/GermL1a.wav"
+ 		"wave"	"@#music/mob/GermL1b.wav"
+ 		"wave"	"@#music/mob/GermM1a.wav"
+ 		"wave"	"@#music/mob/GermM1b.wav"
+ 		"wave"	"@#music/mob/GermS1a.wav"
+ 		"wave"	"@#music/mob/GermS1b.wav"
+ 		"wave"	"@#music/mob/GermX1a.wav"
+ 		"wave"	"@#music/mob/GermX1b.wav"
+	}
+
+	GameData
+	{
+		"MusicPriority"			"LOW"
+		"MusicTrack"            "mobsignal"	
+	}
+}
+"Event.MobSignal2_NoMercy"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3, 0.35"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+ 		"wave"	"@#music/mob/GermL2a.wav"
+ 		"wave"	"@#music/mob/GermL2b.wav"
+ 		"wave"	"@#music/mob/GermM2a.wav"
+ 		"wave"	"@#music/mob/GermM2b.wav"
+ 		"wave"	"@#music/mob/GermS2a.wav"
+ 		"wave"	"@#music/mob/GermS2b.wav"
+ 		"wave"	"@#music/mob/GermX2a.wav"
+ 		"wave"	"@#music/mob/GermX2b.wav"
+	}
+
+	GameData
+	{
+		"MusicPriority"			"LOW"
+		"MusicTrack"            "mobsignal"	
+	}
+}
+
+///////////////////////////////// Atmosphere!! //////////////////////////
+
+"Event.SafeAtmosphere_NoMercy"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6, 0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave" "@#music/contagion/NM_Quarantine_01.wav"
+		"wave" "@#music/contagion/NM_Quarantine_02.wav"
+		"wave" "@#music/contagion/NM_Quarantine_03.wav"
+	}
+
+	GameData
+	{
+		"MusicPriority"			"LOW"
+		"MusicTrack"            "safeAmbient"	
+		"MusicParameters"		"INTENSITY_CELING"
+		"MusicFadeOut"         	"1.0"
+
+	}
+}
+
+
+// danger
+
+"Event.DangerAtmosphere_NoMercy"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6, 0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave" "@#music/contagion/NM_Rabies_01.wav"
+		"wave" "@#music/contagion/NM_Rabies_02.wav"
+		"wave" "@#music/contagion/NM_Rabies_03.wav"
+		"wave" "@#music/contagion/NM_Rabies_04.wav"
+		"wave" "@#music/contagion/NM_Rabies_05.wav"
+		"wave" "@#music/contagion/NM_Rabies_06.wav"
+		"wave" "@#music/contagion/NM_Rabies_07.wav"
+		"wave" "@#music/contagion/NM_Rabies_08.wav"
+		"wave" "@#music/contagion/NM_Rabies_09.wav"
+		"wave" "@#music/contagion/NM_Rabies_10.wav"
+
+		"wave" "@#music/contagion/L4D_Rabies_01.wav"
+		"wave" "@#music/contagion/L4D_Rabies_02.wav"
+		"wave" "@#music/contagion/L4D_Rabies_03.wav"
+		"wave" "@#music/contagion/L4D_Rabies_04.wav"
+		"wave" "@#music/contagion/L4D_Rabies_05.wav"
+		"wave" "@#music/contagion/L4D_Rabies_06.wav"
+		"wave" "@#music/contagion/L4D_Rabies_07.wav"
+		"wave" "@#music/contagion/L4D_Rabies_08.wav"
+		"wave" "@#music/contagion/L4D_Rabies_09.wav"
+		"wave" "@#music/contagion/L4D_Rabies_10.wav"
+
+	}
+
+	GameData
+	{
+		"MusicPriority"			"LOW"
+		"MusicTrack"            "ambient"	
+		"MusicFadeOut"         	"1.0"
+
+	}
+}
+
+
+
+///////////////////////////
+
+// Hits
+
+
+"c6m1.SaveMeSomeSugar"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_95dB"
+	"pitch"			"100"
+
+	// "wave"	"*)music/flu/concert/save_me_some_sugar.mp3"
+	"wave"	"*)music/flu/jukebox/save_me_some_sugar_mono.wav"
+
+	GameData
+	{
+		"MusicBlockTrackList"    "zombat_tp, zombat, zombat2, zombat3, zombatIntro, ambient"
+		"MusicTrack"            "wedding"
+    }
+}
+
+"Jukebox.SaveMeSomeSugar"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_80dB"
+	"pitch"			"100"
+
+	"wave"	"*music/flu/jukebox/save_me_some_sugar_mono.wav"
+
+	GameData
+	{
+		"MusicBlockTrackList"    "zombat_tp, zombat, zombat2, zombat3, zombatIntro, ambient"
+		"MusicTrack"            "jukebox"
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// L4D1
+//
+//
+
+// --------------------------------------------------------------------
+// combat music
+// --------------------------------------------------------------------
+"Event.ZombatIntro_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"wave"			"@#music/zombat/GatesOfHell.wav"
+		
+	GameData
+	{
+		"MusicTrack"            "zombatIntro"
+		"MusicAutoQueue"        "Event.Zombat_L4D1"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+"Event.Zombat_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"wave"			"@#music/zombat/Horde_01.wav"
+
+	GameData
+	{
+		"MusicTrack"            "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "8.0"
+		"MusicMasterTags"
+		{
+			"tag1" "1.033"
+			"tag2" "2.806"
+			"tag3" "5.639"
+		}
+
+
+	}
+}
+"Event.Zombat2_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9"
+	"soundlevel"	"SNDLVL_NONE"
+
+
+	"wave"			"@#music/zombat/slayer/HordeSlayer_01.wav"
+
+	GameData
+	{
+		"MusicTrack"            "zombat2"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "4.0"
+	}
+}
+
+"Event.Zombat3_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"wave"			"@#music/zombat/danger/HordeDanger_01.wav"
+
+	GameData
+	{
+		"MusicTrack"            "zombat3"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"HIGH"
+	}
+}
+
+///////////////////////////////// DEATH!! //////////////////////////
+
+// DEATH
+//
+// There are many kinds of deaths, each specific to how you are dying.
+//
+
+// ledge hang
+// not different in L4D1
+// "Event.LedgeHangTwoHands_L4D1"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"0.8"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"wave"			"@#music/terror/ClingingToHell1.wav"
+
+// 	GameData
+// 	{
+// 		"MusicTrack"            "ledge"
+// 		"MusicPriority"			"CRITICAL"
+// 		"MusicDuckTrackList"    "all"
+// 		"MusicMaster"		"PLAY_SPLIT"
+// 	}
+// }
+
+// "Event.LedgeHangOneHand_L4D1"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"0.8"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"wave"			"@#music/terror/ClingingToHell2.wav"
+
+// 	GameData
+// 	{
+// 		"MusicTrack"            "ledge"
+// 		"MusicPriority"			"CRITICAL"
+// 		"MusicDuckTrackList"    "all"
+// 		"MusicMaster"		"PLAY_SPLIT"
+// 	}		
+// }
+
+// "Event.LedgeHangFingers_L4D1"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"0.8"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"wave"			"@#music/terror/ClingingToHell3.wav"
+
+// 	GameData
+// 	{
+// 		"MusicDuckTrackList"    "all"
+// 		"MusicTrack"            "ledge"
+// 		"MusicPriority"			"CRITICAL"
+// 		"MusicMaster"		"PLAY_SPLIT"
+// 	}		
+// }
+
+// // This cue starts exactly 10 seconds before falling as the health meter clicks down.
+// "Event.LedgeHangAboutToFall_L4D1"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"0.8"
+// 	"soundlevel"	"SNDLVL_NONE"
+
+// 	"wave"			"@#music/terror/ClingingToHell4.wav"
+
+// 	GameData
+// 	{
+// 		"MusicDuckTrackList"    "all"
+// 		"MusicTrack"            "ledge"
+// 		"MusicPriority"			"CRITICAL"
+// 		"MusicMaster"		"PLAY_SPLIT"
+
+// 	}		
+// }
+// "Event.LedgeHangFalling_L4D1"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"0.8"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"wave"			"common/null.wav"
+
+// 	GameData
+// 	{
+// 		"MusicDuckTrackList"    "all"
+// 		"MusicTrack"            "ledge"
+// 		"MusicPriority"			"CRITICAL"
+// 		"MusicMaster"		"PLAY_SPLIT"
+// 	}		
+// }
+
+// // Hits
+// "Event.LedgeHangTwoHandsHit_L4D1"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_100dB"
+
+// 	"wave"			"music/tags/ClingingToHellHit1.wav"
+
+// 	GameData
+// 	{
+// 		"MusicTrack"            "ledgeHits"
+// 		"MusicPriority"			"CRITICAL"
+// 	}
+// }
+
+// "Event.LedgeHangOneHandHit_L4D1"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_100dB"
+
+// 	"wave"			"music/tags/ClingingToHellHit2.wav"
+
+// 	GameData
+// 	{
+// 		"MusicTrack"            "ledgeHits"
+// 		"MusicPriority"			"CRITICAL"
+// 	}		
+// }
+
+// "Event.LedgeHangFingersHit_L4D1"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_100dB"
+
+// 	"wave"			"music/tags/ClingingToHellHit3.wav"
+
+// 	GameData
+// 	{
+// 		"MusicTrack"            "ledgeHits"
+// 		"MusicPriority"			"CRITICAL"
+// 	}		
+// }
+
+// // This cue starts exactly 10 seconds before falling as the health meter clicks down.
+// "Event.LedgeHangAboutToFallHit_L4D1"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_100dB"
+
+// //	"wave"			"common/null.wav"
+// 	"wave"			"music/tags/ClingingToHellHit4.wav"
+
+// 	GameData
+// 	{
+// 		"MusicTrack"            "ledgeHits"
+// 		"MusicPriority"			"CRITICAL"
+// 	}		
+// }
+
+// Down
+// Survivor is down and being beaten by infected
+"Event.Down_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"@#music/terror/PuddleOfYou_l4d1.wav"
+
+	GameData
+	{
+		"MusicTrack"            "down"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"		"PLAY_SPLIT"
+	}		
+}
+// Down
+// Survivor is down and being beaten by infected
+"Event.DownHit_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"music/tags/PuddleOfYouHit_l4d1.wav"
+
+	GameData
+	{
+		"MusicTrack"            "downHits"
+		"MusicPriority"			"CRITICAL"
+	}		
+}
+
+// BleedingOut
+// This cue starts exactly 10 seconds before death as the health meter clicks down.
+"Event.BleedingOut_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"@#music/terror/IAmSoCold_l4d1.wav"
+
+	GameData
+	{
+		"MusicTrack"            "down"
+		"MusicPriority"			 "CRITICAL"
+		"MusicMaster"		"PLAY_SPLIT"
+
+	}		
+}
+// This cue starts exactly 10 seconds before death as the health meter clicks down.
+"Event.BleedingOutHit_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"music/tags/IAmSoColdHit_l4d1.wav"
+
+	GameData
+	{
+		"MusicTrack"            "downHits"
+		"MusicPriority"			"CRITICAL"
+	}		
+}
+
+// This cue starts exactly 10 seconds before death as the health meter clicks down.
+"Event.BleedingOutEnd_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"@#music/terror/TheEnd_l4d1.wav"
+
+	GameData
+	{
+		"MusicTrack"            "down"
+		"MusicPriority"			"CRITICAL"
+		"MusicParameters"		"AFTER_DEATH"
+		"MusicMaster"           "PLAY_SPLIT"
+
+	}		
+}
+
+// Survivor death
+// This is for the death of an individual survivor to be played after the health meter has reached zero
+"Event.SurvivorDeath_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"@#music/undeath/LeftForDeath_l4d1.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "default"
+		"MusicPriority"			"CRITICAL"
+		"MusicParameters"		"AFTER_DEATH"
+		"MusicMaster"           "PLAY_SPLIT"
+
+	}
+}
+
+"Event.SurvivorDeathHit_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"music/tags/LeftForDeathHit_l4d1.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "deathHits"
+		"MusicPriority"			"CRITICAL"
+		"MusicParameters"		"AFTER_DEATH"
+	}
+}
+
+"Event.ScenarioLose_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"@#music/undeath/Death_l4d1.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "default"
+		"MusicMaster"           "PLAY_TO_END | DONT_DISENGAGE"
+		"MusicPriority"			"CRITICAL"
+		"MusicParameters"		"AFTER_DEATH | AFTER_MISSION_END"
+	}
+}
+
+
+///////////////////////////////// Finale!! //////////////////////////
+//
+// FINALE
+//
+
+// Final battle
+// For the final battle before getting rescued"Event.FinalBattle"
+"Event.FinalBattle_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"@#music/the_end/SkinOnOurTeeth_l4d1.wav"
+
+	GameData
+	{
+		"MusicTrack"            "default"
+		"MusicPriority"			"HIGH"
+		"MusicFadeOut"         	"2.0"
+	}
+}
+
+
+///////////////////////////////// Scenario finish!! //////////////////////////
+"Event.ScenarioWin_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"@#music/unalive/TheMonstersWithin_l4d1.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "default"
+		"MusicMaster"           "PLAY_TO_END | DONT_DISENGAGE"
+		"MusicPriority"			"CRITICAL"
+		"MusicParameters"		"AFTER_DEATH | AFTER_MISSION_END"
+	}
+}
+"Event.SafeRoom_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"@#music/safe/TheMonstersWithout_l4d1.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "default"
+		"MusicMaster"           "PLAY_TO_END | DONT_DISENGAGE"
+		"MusicPriority"			"CRITICAL"
+		"MusicParameters"		"AFTER_DEATH | AFTER_MISSION_END"
+	}
+}
+
+// ///////////////////////////////// Bosses!! //////////////////////////
+
+// // --------------------------------------------------------------------
+// // TANKS
+// // --------------------------------------------------------------------
+// "Event.Tank"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"wave"			"@#music/tank/Tank.wav"
+	
+// 	GameData
+// 	{
+// 		"MusicTrack"            "tank"
+// 		"MusicPriority"			"CRITICAL"
+// 	}
+// }
+// // tank midpoint
+// // half way through the finale a tank shows up
+// "Event.TankMidpoint"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"wave"			"@#music/tank/Taank.wav"
+	
+// 	GameData
+// 	{
+// 		"MusicTrack"            "tank"
+// 		"MusicPriority"			"HIGH"
+// 	}
+// }
+
+// // tank brothers
+// // Before the final zombie battle 2 tanks show up
+// "Event.TankBrothers"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"wave"			"@#music/tank/Taank.wav"
+	
+// 	GameData
+// 	{
+// 		"MusicTrack"            "tank"
+// 		"MusicPriority"			"HIGH"
+// 	}
+// }
+
+// "Event.TankDead"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_NONE"
+
+// 	"wave"			"common/null.wav"
+
+// 	GameData
+// 	{
+// 		"MusicTrack"            "tank"
+// 	}
+// }
+
+// // ----------------------------------------------
+// // witch
+// // ----------------------------------------------
+// "Event.WitchAttack"  
+//  {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_NONE"
+//  	"wave"			"@#music/witch/PsychoWitch.wav"
+	
+// 	GameData
+// 	{
+// 		"MusicDuckTrackList"    "tank"
+// 		"MusicTrack"            "witch"
+// 		"MusicPriority"			"CRITICAL"
+// 	}
+
+// }
+// "Event.WitchBurning"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_NONE"
+//  	"wave"			"@#music/witch/WitchRoast.wav"
+  
+	
+// 	GameData
+// 	{
+// 		"MusicDuckTrackList"    "tank"
+// 		"MusicTrack"            "witch"
+// 		"MusicPriority"			"CRITICAL" 
+// 	}
+
+// }
+
+// "Event.WitchRage"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_110dB"
+//  	"wave"			"music/witch/WitchEncroacher.wav"
+	
+// 	GameData
+// 	{
+// 		"MusicTrack"            "witch"
+// 		"MusicPriority"			"CRITICAL"
+// 	}
+// }
+
+// "Event.WitchDead"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_NONE"
+
+// 	"wave"			"common/null.wav"
+
+// 	GameData
+// 	{
+// 		"MusicTrack"            "witch"
+// 	}
+// }
+
+// // --------------------------------------------------------------------
+// // mobbed
+// // --------------------------------------------------------------------
+// "Event.Mobbed"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"wave"			"@#music/terror/MobRules.wav"
+	
+// 	GameData
+// 	{
+// 		"MusicTrack"            "mobRules"
+// 		"MusicDuckTrackList"    "all"
+// 		"MusicPriority"			"HIGH"
+// 	}
+// }
+// // --------------------------------------------------------------------
+// // Hunter Pounce
+// // While being torn apart by a hunter
+// // --------------------------------------------------------------------
+// "Event.HunterPounce"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"wave"			"@#music/pzattack/Exenteration.wav"
+	
+// 	GameData
+// 	{
+// 		"MusicTrack"            "PZAttack"
+// 		"MusicDuckTrackList"    "all"
+// 		"MusicPriority"			"CRITICAL"
+// 		"MusicMaster"		"PLAY_SPLIT"
+// 	}
+// }
+// "Event.HunterHit"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_100dB"
+// 	"wave"			"music/tags/ExenterationHit.wav"
+	
+// 	GameData
+// 	{
+// 		"MusicTrack"            "hunterHits"
+// 		// "MusicDuckTrackList"    "all"
+// 		"MusicPriority"			"CRITICAL"
+// 	}
+// }
+
+// // --------------------------------------------------------------------
+// // SMOKER
+// // While being choked by a smoker
+// // --------------------------------------------------------------------
+// "Event.SmokerChoke"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"wave"			"@#music/pzattack/Asphyxiation.wav"
+	
+// 	GameData
+// 	{
+// 		"MusicTrack"            "PZAttack"
+// 		"MusicDuckTrackList"    "all"
+// 		"MusicPriority"			"CRITICAL"
+// 		"MusicMaster"		"PLAY_SPLIT"
+// 	}
+// }
+// "Event.SmokerChokeHit"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_100dB"
+// 	"wave"			"@#music/tags/AsphyxiationHit.wav"
+
+// 	GameData
+// 	{
+// 		"MusicTrack"            "smokerHits"
+// 		"MusicPriority"			"CRITICAL"
+// 	}
+// }
+
+// "Event.SmokerDrag"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"wave"			"@#music/terror/TongueTied.wav"
+	
+// 	GameData
+// 	{
+// 		"MusicTrack"            "PZAttack"
+// 		"MusicDuckTrackList"    "all"
+// 		"MusicPriority"			"CRITICAL"
+// 	}
+// }
+// "Event.SmokerDragHit"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_100dB"
+// 	"wave"			"music/tags/TongueTiedHit.wav"
+	
+// 	GameData
+// 	{
+// 		"MusicTrack"            "smokerHits"
+// 		"MusicDuckTrackList"    "all"
+// 		"MusicPriority"			"CRITICAL"
+// 		"MusicParameters"		"NO_INTENSITY_TRACK"
+// 	}
+// }
+
+// // --------------------------------------------------------------------
+// // Boomer
+// // --------------------------------------------------------------------
+// "Event.VomitInTheFace"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"wave"			"@#music/terror/Pukricide.wav"
+	
+// 	GameData
+// 	{
+// 		"MusicTrack"            "PZAttack"
+// 		"MusicDuckTrackList"    "all"
+// 		"MusicPriority"			"HIGH"
+// 		"MusicMaster"		"PLAY_SPLIT"
+// 	}
+// }
+
+// "Event.BoomerHit"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_100dB"
+// 	"wave"			"music/tags/PukricideHit.wav"
+	
+// 	GameData
+// 	{
+// 		"MusicTrack"            "boomerHits"
+// 		"MusicPriority"			"CRITICAL"
+// 	}
+// }
+
+
+// // --------------------------------------------------------------------
+// // Alerts
+// // --------------------------------------------------------------------
+// // --------------------------------------------------------------------
+// // Alerts
+// // --------------------------------------------------------------------
+// "Event.BoomerAlertClose"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_110dB"
+// 	"wave"			"music/bacteria/BoomerBacteria.wav"
+	
+// 	GameData
+// 	{
+// 		"MusicTrack"            "BoomerAlert"
+// 		"MusicPriority"			"CRITICAL"
+// 	}
+// }
+// "Event.BoomerAlert"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_120dB"
+// 	"wave"			"music/bacteria/BoomerBacteriaS.wav"
+	
+// 	GameData
+// 	{
+// 		"MusicTrack"            "BoomerAlert"
+// 		"MusicPriority"			"CRITICAL"
+// 	}
+// }
+// "Event.BoomerAlertFar"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_125dB"
+// 	"wave"			"music/bacteria/BoomerBacteriaS.wav"
+	
+// 	GameData
+// 	{
+// 		"MusicTrack"            "BoomerAlert"
+// 		"MusicPriority"			"CRITICAL"
+// 	}
+// }
+// "Event.SmokerAlertClose"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_110dB"
+// 	"wave"			"music/bacteria/SmokerBacteria.wav"
+	
+// 	GameData
+// 	{
+// 		"MusicTrack"            "SmokerAlert"
+// 		"MusicPriority"			"CRITICAL"
+// 	}
+// }
+// "Event.SmokerAlert"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_120dB"
+// 	"wave"			"music/bacteria/SmokerBacteriaS.wav"
+	
+// 	GameData
+// 	{
+// 		"MusicTrack"            "SmokerAlert"
+// 		"MusicPriority"			"CRITICAL"
+// 	}
+// }
+// "Event.SmokerAlertFar"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_125dB"
+// 	"wave"			"music/bacteria/SmokerBacteriaS.wav"
+	
+// 	GameData
+// 	{
+// 		"MusicTrack"            "SmokerAlert"
+// 		"MusicPriority"			"CRITICAL"
+// 	}
+// }
+// "Event.HunterAlertClose"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"	"SNDLVL_110dB"
+// 	"wave"			"music/bacteria/HunterBacteria.wav"
+	
+// 	GameData
+// 	{
+// 		"MusicTrack"            "HunterAlert"
+// 		"MusicPriority"			"CRITICAL"
+// 	}
+// }
+// "Event.HunterAlert"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"0.7"
+// 	"soundlevel"	"SNDLVL_115dB"
+// 	"wave"			"music/bacteria/HunterBacteriaS.wav"
+	
+// 	GameData
+// 	{
+// 		"MusicTrack"            "HunterAlert"
+// 		"MusicPriority"			"CRITICAL"
+// 	}
+// }
+// "Event.HunterAlertFar"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"0.7"
+// 	"soundlevel"	"SNDLVL_120dB"
+// 	"wave"			"music/bacteria/HunterBacteriaS.wav"
+	
+// 	GameData
+// 	{
+// 		"MusicTrack"            "HunterAlert"
+// 		"MusicPriority"			"CRITICAL"
+// 	}
+// }
+
+// ///////////////////////////////// Zombies!! //////////////////////////
+// //------------------------------------------------------------------------
+// // 1 = ANYWHERE
+// // 2 = BEHIND
+// // 3 = ABOVE
+
+// // S
+// "Event.MobSignalS1"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"0.65, 0.8"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"rndwave"
+// 	{
+//  		"wave"	"@#music/mob/GermS1a.wav"
+//  		"wave"	"@#music/mob/GermS1b.wav"
+// 	}
+
+// 	GameData
+// 	{
+// 		"MusicPriority"			"LOW"
+// 		"MusicTrack"            "mobsignal"	
+// 	}
+// }
+
+// "Event.MobSignalS2"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"0.65, 0.8"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"rndwave"
+// 	{
+//  		"wave"	"@#music/mob/GermS2a.wav"
+//  		"wave"	"@#music/mob/GermS2b.wav"
+// 	}
+
+// 	GameData
+// 	{
+// 		"MusicPriority"			"LOW"
+// 		"MusicTrack"            "mobsignal"	
+// 	}
+// }
+
+// // M
+// "Event.MobSignalM1"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"0.6, 0.75"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"rndwave"
+// 	{
+//  		"wave"	"@#music/mob/GermM1a.wav"
+//  		"wave"	"@#music/mob/GermM1b.wav"
+// 	}
+
+// 	GameData
+// 	{
+// 		"MusicPriority"			"LOW"
+// 		"MusicTrack"            "mobsignal"	
+// 	}
+// }
+
+// "Event.MobSignalM2"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"0.6, 0.75"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"rndwave"
+// 	{
+//  		"wave"	"@#music/mob/GermM2a.wav"
+//  		"wave"	"@#music/mob/GermM2b.wav"
+// 	}
+
+// 	GameData
+// 	{ 		"wave"	"@#music/mob/Germ_01_01.wav"
+
+// 		"MusicPriority"			"LOW"
+// 		"MusicTrack"            "mobsignal"	
+// 	}
+// }
+
+// // L
+// "Event.MobSignalL1"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"0.55, 0.7"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"rndwave"
+// 	{
+//  		"wave"	"@#music/mob/GermL1a.wav"
+//  		"wave"	"@#music/mob/GermL1b.wav"
+// 	}
+
+// 	GameData
+// 	{
+// 		"MusicPriority"			"LOW"
+// 		"MusicTrack"            "mobsignal"	
+// 	}
+// }
+// "Event.MobSignalL2"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"0.55, 0.7"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"rndwave"
+// 	{
+//  		"wave"	"@#music/mob/GermL2a.wav"
+//  		"wave"	"@#music/mob/GermL2b.wav"
+// 	}
+
+// 	GameData
+// 	{
+// 		"MusicPriority"			"LOW"
+// 		"MusicTrack"            "mobsignal"	
+// 	}
+// }
+
+// // X
+// "Event.MobSignalX1"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"0.5, 0.65"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"rndwave"
+// 	{
+//  		"wave"	"@#music/mob/GermX1a.wav"
+//  		"wave"	"@#music/mob/GermX1b.wav"
+// 	}
+
+// 	GameData
+// 	{
+// 		"MusicPriority"			"LOW"
+// 		"MusicTrack"            "mobsignal"	
+// 	}
+// }
+// "Event.MobSignalX2"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"0.5, 0.65"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"rndwave"
+// 	{
+//  		"wave"	"@#music/mob/GermX2a.wav"
+//  		"wave"	"@#music/mob/GermX2b.wav"
+// 	}
+
+// 	GameData
+// 	{
+// 		"MusicPriority"			"LOW"
+// 		"MusicTrack"            "mobsignal"	
+// 	}
+// }
+
+
+// --------------------------------------------------------------------
+// Zombie choir
+//
+// --------------------------------------------------------------------
+"Event.ZombieChoir_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_150dB"
+
+	"rndwave"
+	{
+		"wave"		"music/zombiechoir/ZombieChoir_01_l4d1.wav"
+		"wave"		"music/zombiechoir/ZombieChoir_02_l4d1.wav"
+		"wave"		"music/zombiechoir/ZombieChoir_03_l4d1.wav"
+		"wave"		"music/zombiechoir/ZombieChoir_04_l4d1.wav"
+		"wave"		"music/zombiechoir/ZombieChoir_05_l4d1.wav"
+		"wave"		"music/zombiechoir/ZombieChoir_06_l4d1.wav"
+		"wave"		"music/zombiechoir/ZombieChoir_07_l4d1.wav"
+	}	
+	GameData
+	{
+		"MusicTrack"            "zombiechoir"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+
+///////////////////////////////////////////////////////////
+// "Reveal" - We just moved into a large open space
+//
+"Event.LargeAreaRevealed_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/glimpse/AGlimpseOfHell_01.wav"
+		"wave"			"@#music/glimpse/AGlimpseOfHell_02.wav"
+		"wave"			"@#music/glimpse/AGlimpseOfHell_03.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "glimpse"
+	}
+}
+
